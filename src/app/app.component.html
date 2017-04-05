@@ -1,0 +1,29 @@
+
+<!-- Side Menus -->
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" (click)="closeNav()">&times;</a>
+  <a style="font-size: 17px; color: white; cursor: default;">Menus</a>
+  <a [routerLink]="['/electronics']" (click)="closeNav()">Electronics</a>
+  <a [routerLink]="['/office-supplies']"  (click)="closeNav()">Office supplies</a>
+  <a [routerLink]="['/paper-stationery']"  (click)="closeNav()">Paper stationery</a>
+</div>
+
+<!-- Static Header -->
+<div class="topbar">
+  <a class="menu" (click)="openNav()">Categories</a>
+</div>
+
+<!-- Middle Section -->
+
+<div class="main">
+  <router-outlet></router-outlet>
+
+</div>
+
+<!-- Static Footer -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>

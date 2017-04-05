@@ -1,0 +1,19 @@
+
+<div class="w3-container">
+  <h2  align="center">Office Supplies Products</h2>
+
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-green">
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Ratings</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let product of officeSuppliesProducts">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.rating}}</td>
+    </tr>
+  </table>
+</div>
